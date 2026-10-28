@@ -1,0 +1,341 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  color: #222;
+  background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
+  line-height: 1.6;
+}
+
+
+/* =========================
+   2. BANNER - ẢNH ĐẦU TRANG
+========================= */
+
+.banner {
+  height: 280px;
+  background-image: url(https://img6.thuthuatphanmem.vn/uploads/2022/06/22/anh-nen-don-gian-4k_040350994.jpg);
+  background-size: cover;
+  /* phóng to thu nhỏ phủ kín trang */
+  background-position: center;
+  position: relative;
+  color: white;
+}
+
+.banner-bg {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.intro {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.intro h1 {
+  font-size: 36px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.intro p {
+  font-size: 14px;
+  color: #ddd;
+}
+
+
+/* =========================
+   3. THANH ĐIỀU HƯỚNG
+========================= */
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-item {
+  display: block;
+  padding: 20px 35px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  border-left: 1px solid #eee;
+}
+
+.nav-item:last-child {
+  border-right: 1px solid #eee;
+}
+
+.nav-item p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.nav-item:hover {
+  color: #199cdb;
+  background-color: #f5f5f5;
+}
+
+.nav-avatar-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+}
+/* chỉnh avatar */
+.img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 100%;
+  /* bo tròn ảnh khi khung vuông */
+}
+
+
+
+
+#about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #f5f5f5;
+}
+
+#target,
+#info {
+  padding: 60px;
+}
+
+#target {
+  background-color: #f7f7f7;
+}
+
+#info {
+  background-color: #eeeeee;
+}
+
+#target h2,
+#info h2 {
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+
+#target p,
+#info li {
+  color: #777;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+#info ul {
+  list-style: none;
+  padding: 0;
+}
+
+#info li {
+  margin-bottom: 5px;
+}
+
+
+/* =========================
+   5. THÔNG TIN NGHỀ NGHIỆP
+========================= */
+
+#resume {
+  background-color: #ffffff;
+}
+
+#experience .Resume-item{
+  background-color: #777;
+  
+}
+
+/* Chia mỗip phần bằng nhau cho hai mục */
+#noidung{
+  
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+}
+/* Tăng kích thước chấm */
+ul li::marker {
+  font-size: 30px;
+  color: #199cdb;
+}
+
+.Resume-item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+#item-title{
+  padding: auto;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+
+#noidung2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.Resume-item-info {
+  color: #555;
+  
+}
+
+.entry {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.date {
+  color: #888;
+  font-size: 13px;
+}
+
+.list {
+  font-size: 14px;
+}
+
+
+/* =========================
+   6. KỸ NĂNG VÀ NGÔN NGỮ
+========================= */
+
+#noidung3{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
+.level-entry {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.level-bar,
+.level {
+  background-color: #eee;
+  height: 5px;
+}
+
+.line {
+  display: inline-block;
+  height: 5px;
+  background-color: #ddd;
+}
+
+.line.fill {
+  background-color: #e53935;
+}
+
+
+/* =========================
+   7. SỞ THÍCH
+========================= */
+
+.hobby-item {
+  padding: 10px;
+  border: 1px solid #eee;
+}
+
+
+/* =========================
+   8. CHỨNG CHỈ - GIẢI THƯỞNG
+========================= */
+
+#certificates {
+  background-color: #f5f5f5;
+  padding: 30px;
+}
+
+#certificates h2 {
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+
+.cert-entry {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.cert-item {
+  padding: 10px;
+}
+
+.cert-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cert-info {
+  color: #555;
+}
+
+
+/* =========================
+   9. DỰ ÁN
+========================= */
+
+#projects {
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+#projects h2 {
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+
+.project-item {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.project-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project-item h3 {
+  padding: 15px;
+  font-size: 18px;
+}
+
+
+/* =========================
+   10. FOOTER
+========================= */
+
+#footer {
+  background-color: #111;
+  color: #fff;
+  padding: 25px;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #ff3333;
+}

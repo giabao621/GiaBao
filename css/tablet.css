@@ -1,0 +1,19 @@
+/* ==================== TABLET ==================== */
+
+@media (min-width: 601px) and (max-width: 991px) {
+  #resume {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-entry {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav-item {
+    padding: 20px 15px;
+  }
+
+  .cert-item img {
+    width: 120px;
+  }
+}

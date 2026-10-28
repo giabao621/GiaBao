@@ -1,0 +1,20 @@
+/* ==================== LAPTOP ==================== */
+
+@media (min-width: 992px) {
+  #resume {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .project-entry {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+
+strong{
+  font-family: monospace;
+  font-size: 23px;
+
+
+}
